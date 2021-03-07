@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    homeです
+    <h1>Home</h1>
   </div>
 </template>
 
