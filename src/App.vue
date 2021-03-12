@@ -60,12 +60,11 @@ export default Vue.extend({
 body {
   //height: 100vh;
 }
-@media screen and (max-width: 480px) {
-  .main__wrap {
+/* Safari用のハックは、Chromeに適用されないようにする */
+@supports (-webkit-touch-callout: none) {
+  body {
     /* Safari用のハック */
-    max-height: calc(100vh - 200px) !important;
-    overflow-y: scroll !important;
-    //height: calc(-webkit-fill-available - 200px)
+    height: -webkit-fill-available;
   }
 }
 </style>
