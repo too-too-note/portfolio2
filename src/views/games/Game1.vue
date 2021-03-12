@@ -95,7 +95,7 @@ export default Vue.extend({
           this.validNumber.push(random)
           setTimeout(() => {
             this.deleteNumber(random)
-          },700)
+          },600)
           break
         }
       }
@@ -160,7 +160,7 @@ export default Vue.extend({
 
 .game {
   margin: 20px;
-  height: calc(100vh - 450px)
+  height: 0;
 }
 
 .game-title {

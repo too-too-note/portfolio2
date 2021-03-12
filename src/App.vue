@@ -14,7 +14,7 @@
       <v-toolbar-title v-if="this.$vuetify.breakpoint.mdAndUp">Natio's Site</v-toolbar-title>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="main-page">
       <router-view/>
     </v-main>
   </v-app>
@@ -61,9 +61,9 @@ body {
 
 /* Safari用のハックは、Chromeに適用されないようにする */
 @supports (-webkit-touch-callout: none) {
-  body {
+  .main-page {
     /* Safari用のハック */
-    height: -webkit-fill-available;
+    height: calc(100vh - 200px);
   }
 }
 </style>
