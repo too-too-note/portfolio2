@@ -15,7 +15,7 @@
     </v-app-bar>
 
     <v-main>
-      <div class="main-page">
+      <div class="main__wrap">
         <router-view/>
       </div>
     </v-main>
@@ -60,10 +60,12 @@ export default Vue.extend({
 body {
   //height: 100vh;
 }
-
-.main__wrap {
-  /* Safari用のハック */
-  max-height: 30px !important;
-  display: inline-block;
+@media screen and (max-width: 480px) {
+  .main__wrap {
+    /* Safari用のハック */
+    max-height: calc(100vh - 200px) !important;
+    overflow-y: scroll !important;
+    //height: calc(-webkit-fill-available - 200px)
+  }
 }
 </style>
