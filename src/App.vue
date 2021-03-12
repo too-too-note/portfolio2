@@ -14,8 +14,10 @@
       <v-toolbar-title v-if="this.$vuetify.breakpoint.mdAndUp">Natio's Site</v-toolbar-title>
     </v-app-bar>
 
-    <v-main class="main-page">
-      <router-view/>
+    <v-main>
+      <div class="main-page">
+        <router-view/>
+      </div>
     </v-main>
   </v-app>
 </template>
@@ -56,14 +58,12 @@ export default Vue.extend({
 }
 
 body {
-  height: 100vh;
+  //height: 100vh;
 }
 
-/* Safari用のハックは、Chromeに適用されないようにする */
-@supports (-webkit-touch-callout: none) {
-  .main-page {
-    /* Safari用のハック */
-    height: calc(100vh - 200px);
-  }
+.main__wrap {
+  /* Safari用のハック */
+  max-height: 30px !important;
+  display: inline-block;
 }
 </style>
