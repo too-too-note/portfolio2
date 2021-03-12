@@ -14,7 +14,7 @@
       <v-toolbar-title v-if="this.$vuetify.breakpoint.mdAndUp">Natio's Site</v-toolbar-title>
     </v-app-bar>
 
-    <v-main style="margin: 20px">
+    <v-main>
       <router-view/>
     </v-main>
   </v-app>
@@ -53,17 +53,5 @@ export default Vue.extend({
 
 .right {
   margin: 0 0 0 auto;
-}
-
-body {
-  height: 100vh;
-}
-
-/* Safari用のハックは、Chromeに適用されないようにする */
-@supports (-webkit-touch-callout: none) {
-  body {
-    /* Safari用のハック */
-    height: -webkit-fill-available;
-  }
 }
 </style>

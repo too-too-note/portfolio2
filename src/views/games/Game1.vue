@@ -159,7 +159,8 @@ export default Vue.extend({
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 .game {
-  height: calc(100vh - 200px)
+  margin: 20px;
+  height: calc(100vh - 450px)
 }
 
 .game-title {
