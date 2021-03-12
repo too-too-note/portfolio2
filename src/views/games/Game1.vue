@@ -42,7 +42,7 @@
         <v-card-title class="headline">
           Result
         </v-card-title>
-        <v-card-text>{{score}}点！ {{resultMessage}}</v-card-text>
+        <v-card-text>{{resultMessage}}</v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
@@ -50,7 +50,7 @@
               text
               @click="dialog = false"
           >
-            Agree
+            Reset
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -95,7 +95,7 @@ export default Vue.extend({
           this.validNumber.push(random)
           setTimeout(() => {
             this.deleteNumber(random)
-          },700)
+          },650)
           break
         }
       }
@@ -108,18 +108,18 @@ export default Vue.extend({
       if(this.time < 1) {
         this.playing = false
         this.dialog = true
-        this.reset()
         if (this.score < 0) {
-          this.resultMessage = "ダメだこりゃ"
+          this.resultMessage = `${this.score}点！ ダメだこりゃ`
         } else if (this.score < 20) {
-          this.resultMessage = "まあまあだね"
+          this.resultMessage = `${this.score}点！ まあまあだね`
         } else if (this.score < 40) {
-          this.resultMessage = "なかなかだね"
+          this.resultMessage = `${this.score}点！ なかなかだね`
         } else if (this.score < 50) {
-          this.resultMessage = "そこそこやね"
+          this.resultMessage = `${this.score}点！ そこそこやね`
         } else {
-          this.resultMessage = "パねえ！"
+          this.resultMessage = `${this.score}点！ パねえ！`
         }
+        this.reset()
       }
     },
     startGame() {
@@ -159,7 +159,7 @@ export default Vue.extend({
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 .game {
-  height: calc(100vh - 94px);
+  //height: 0;
 }
 
 .game-title {
