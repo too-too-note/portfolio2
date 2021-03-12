@@ -95,7 +95,7 @@ export default Vue.extend({
           this.validNumber.push(random)
           setTimeout(() => {
             this.deleteNumber(random)
-          },650)
+          },700)
           break
         }
       }
@@ -159,7 +159,7 @@ export default Vue.extend({
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 .game {
-  //height: 0;
+  height: calc(100vh - 200px)
 }
 
 .game-title {
