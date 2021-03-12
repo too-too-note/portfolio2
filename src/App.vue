@@ -9,7 +9,7 @@
         <v-tab to="/">Home</v-tab>
         <v-tab to="/about">About</v-tab>
         <v-tab to="/skill">Skill</v-tab>
-        <v-tab to="/title">Games</v-tab>
+        <v-tab to="/game1">Games</v-tab>
       </v-tabs>
       <v-toolbar-title v-if="this.$vuetify.breakpoint.mdAndUp">Natio's Site</v-toolbar-title>
     </v-app-bar>

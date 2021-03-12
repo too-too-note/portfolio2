@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
-import Title from '../views/mogura/Title.vue'
+import Game1 from '../views/games/Game1.vue'
 
 Vue.use(VueRouter)
 
@@ -22,9 +22,9 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Skill.vue')
   },
   {
-    path: '/title',
-    name: 'Title',
-    component: () => import(/* webpackChunkName: "about" */ '../views/mogura/Title.vue')
+    path: '/game1',
+    name: 'Game1',
+    component: () => import(/* webpackChunkName: "about" */ '../views/games/Game1.vue')
   }
 ]
 
