@@ -103,7 +103,7 @@ export default Vue.extend({
     decreaseTime() {
       this.time--
       if (this.time == 20 || this.time == 7) {
-        setTimeout(() => this.intervalIds.push(setInterval(this.generateNum, 800), 30))
+        setTimeout(() => this.intervalIds.push(setInterval(this.generateNum, 600), 30))
       }
       if(this.time < 1) {
         this.playing = false
@@ -125,7 +125,7 @@ export default Vue.extend({
     startGame() {
       this.playing = true
       this.validNumber = []
-      this.intervalIds.push(setInterval(this.generateNum, 800))
+      this.intervalIds.push(setInterval(this.generateNum, 600))
       this.intervalIds.push(setInterval(this.decreaseTime, 1000))
     },
     clickCell(num: number) {
@@ -166,13 +166,6 @@ export default Vue.extend({
   font-family: 'DotGothic16', sans-serif;
 }
 
-@media screen and (min-width: 481px) {
-  .mole-box {
-    max-width: 420px;
-    min-height: 420px;
-  }
-}
-
 .mole-cell {
   border-radius: 5px;
   background-color: azure;
@@ -182,11 +175,21 @@ export default Vue.extend({
   .mole-cell {
     min-height: 97px;
   }
+  .col {
+    padding: 3px;
+  }
+  .mole-box {
+    margin: 0 10px 0 10px;
+  }
 }
 
 @media screen and (min-width: 481px) {
   .mole-cell {
     min-height: 123px;
+  }
+  .mole-box {
+    max-width: 420px;
+    min-height: 420px;
   }
 }
 
