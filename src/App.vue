@@ -1,9 +1,9 @@
 <template>
   <v-app class="app">
     <v-app-bar
-      app
-      color="black"
-      dark
+        class="primary"
+        app
+        dark
     >
       <v-tabs>
         <v-tab to="/">Home</v-tab>
@@ -14,14 +14,33 @@
       <v-toolbar-title v-if="this.$vuetify.breakpoint.mdAndUp">Natio's Site</v-toolbar-title>
     </v-app-bar>
 
+
+
     <v-main>
       <div class="main__wrap">
-        <div>
+        <div style="margin-top: 5px">
           <img id=thank src="./resource/bird18.gif">
         </div>
+        <img style="object-fit:cover; width: 100vw; height: 100px; object-position:100% 30%; margin-top: -300px" src="./resource/sky.jpg">
         <router-view/>
+        <div style="min-height: 50px"></div>
       </div>
     </v-main>
+
+    <v-footer
+        color="black"
+        fixed
+        padless
+    >
+      <v-card
+          class="primary white--text text-center"
+      >
+        <v-card-text class="white--text" style="width: 100vw">
+          <img src="./resource/penguin7.gif">
+          {{ new Date().getFullYear() }}  <strong>too-too-note</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -68,7 +87,6 @@ body {
   animation-name: move;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  animation-delay: 2s;
 }
 
 @keyframes move{

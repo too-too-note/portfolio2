@@ -13,6 +13,9 @@
         <img src="../resource/bird4.gif">
       </div>
     </v-col>
+    <v-col cols=12 lg=12 md=12 sm=12 align="center">
+      <p></p>
+    </v-col>
   </v-row>
 </template>
 
@@ -40,7 +43,7 @@ export default Vue.extend({
 
 <style>
   .home-title {
-    min-height: 300px;
+    min-height: 350px;
   }
 
   .prev-leave {
