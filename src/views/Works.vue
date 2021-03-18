@@ -48,16 +48,16 @@ export default Vue.extend({
         content: '研修で作成。ユーザーの有効無効、所持しているロールの編集を行えるアプリを作成。',
       },
       {
-        title: 'test',
-        content: 'test',
+        title: '企画書アプリ',
+        content: '製品企画書をウェブデータベース化。ワークフロー機能、コメント機能も実装。',
       },
       {
-        title: 'green lighten-1',
-        content: 'mdi-airballoon',
+        title: 'バーコード読み取りシステム',
+        content: '',
       },
       {
-        title: 'indigo',
-        content: 'mdi-buffer',
+        title: '商品管理DBアプリ',
+        content: '',
       },
     ],
   }),

@@ -9,9 +9,9 @@
           <v-row>
             <v-col :md="4" :sm="12">
               <v-img
-                  max-height="200"
-                  max-width="400"
-                  src="../resource/dog.jpg"
+                  max-height="230"
+                  max-width="250"
+                  src="../resource/dog.gif"
               ></v-img>
             </v-col>
             <v-col :md="8" :sm="12">

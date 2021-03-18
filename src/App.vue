@@ -14,8 +14,6 @@
       <v-toolbar-title v-if="this.$vuetify.breakpoint.mdAndUp">Natio's Site</v-toolbar-title>
     </v-app-bar>
 
-
-
     <v-main>
       <div class="main__wrap">
         <div style="margin-top: 5px">
